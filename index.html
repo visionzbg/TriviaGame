@@ -6,29 +6,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Rock+Salt|Shojumaru" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-	<div class="container-fluid">
-		<h1>Quiz</h1>
+    <div class="container-fluid">
+		    <h1>Wu-Tang Clan</h1>
+		    <h2>Trivia Game</h2>
 				<br/>
+			<span>  Timer: </span><span id="timer">120</span>
 				<br/>
-			<a href="#" id="start" class="btn btn-primary btn-lg">Let's Begin</a>
+			<a href="#" id="start" class="btn btn-primary btn-lg">ENTER</a>
 				<br/>
-		<div class="well jumbotron">
-				  <h3 id="question"></h3>
-				  <br/><br/>
-				  <form id="form">
+		    <div class="well jumbotron">
+		    <h3 id="question"></h3>
+				<br/>
+			<form id="form"></form>
+				<br/>
+            <a href="#" id="next" class="button">Next</a><br/>
+                </div>
+			<div id="result"></div>
+    </div>
 
-				  </form>
-				  <br/>
-				  <a href="#" id="next" class="button">Next</a><br/>
-				  <div id="progressbar" class="progress-bar progress-bar-striped"></div>
-		</div>
-				<div id="result"></div>
-	</div>
-	<script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>

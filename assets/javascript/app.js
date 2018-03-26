@@ -1,29 +1,26 @@
-// JavaScript Document
-function QuizQuestion(question, choices, correctAnswer){
+// WuTang Trivia JavaScript
+
+//Questions & Answers 1
+
+function triviaQuestion(question, choices, correctAnswer){
   this.question = question;
   this.choices = choices;
   this.correctAnswer = correctAnswer;
 }
-  
+
+//Questions & Answers 2
+
 var allQuestions = [
-  new QuizQuestion("Grand Central Terminal, Park Avenue, New York is the world's",["largest railway station", "highest railway station", "longest railway station", "None of the above"],0),
-  new QuizQuestion("Entomology is the science that studies",["Behavior of human beings", "Insects", "The origin and history of technical and scientific terms"],1),
-  new QuizQuestion("Eritrea, which became the 182nd member of the UN in 1993, is in the continent of",[ "Asia", "Africa", "Europe", "Australia"],1),
-  new QuizQuestion(" Garampani sanctuary is located at ",["Junagarh, Gujarat", "Diphu, Assam", "Kohima, Nagaland", "Gangtok, Sikkim"],1),
-  new QuizQuestion("For which of the following disciplines is Nobel Prize awarded?",["Physics and Chemistry", "Physiology or Medicine","Literature, Peace and Economics","All of the above" ],3),
-  new QuizQuestion("Hitler party which came into power in 1933 is known as",["Labor Party", "Nazi Party", "Ku-Klux-Klan","Democratic Party"],1),
-  new QuizQuestion("The headquarter of International Atomic Energy Agency (IAEA) are situated at ",["Vienna", "Rome", "Geneva","Paris"],0),
-  new QuizQuestion("Where is the permanent secretariat of the SAARC?",["Kathmandu", "New Delhi", "Islamabad", "Colombo"],0),
-  new QuizQuestion("The Olympic Flame symbolises ",["unity among various nations of the world", "speed, perfection and strength", "sports as a means for securing harmony among nations", "continuity between the ancient and modern games"],3),
-  new QuizQuestion("The number of already named bones in the human skeleton is",["200", "206", "212", "218"],1),
-  /*
-  new QuizQuestion("What has a tail but no body?",["A human", "A coin", "A cloud"],1),
-  new QuizQuestion("What word in the English language is always spelled incorrectly?",["It's possible to spell anything right as long as you learn it", "Shakespeare", "Onomatopoeia", "Incorrectly"],2),
-  new QuizQuestion("When do you stop at green and go at red?",["Watermelon!", "Traffic light!", "Garden"],0),
-  new QuizQuestion("What rotates but still remains in the same place?",["Bottle (spin the bottle game)", "Clock", "Stairs"],1),
-  new QuizQuestion("How can you lift an elephant with one hand?",["Truck","Use both hands!", "Use a lever", "There is no such thing"],2)
-*/  
-];
+  new triviaQuestion("Which member of the Wu-Tang is not on 'Gravel Pit' due to incarceration?",["Ghost Face Killah", "Method Man", "Gza", "Ol' Dirty Bastard"],3),
+  new triviaQuestion("Who is NOT an original member of the Wu-Tang Clan?",["Ghostface Killah", "Cappadonna", "Method Man", "RZA"],1),
+  new triviaQuestion("The majority of Wu-Tang Members are from which New York City Borough?",[ "Bronx", "Queens", "Staten Island", "Brooklyn"],2),
+  new triviaQuestion(" Who is the first Wu-Tang member to release a solo effort? ",["Ghostface Killah", "Method Man", "Raekwon", "GZA"],3),
+  new triviaQuestion("Which of these Ghostface albums does NOT feature Raekwon on the cover?",[ "Bulletproof Wallets", "Supreme Clientele","Ironman","None of the above" ],0),
+  new triviaQuestion("What Wu-member real name is Elgin Turner?",["Raekwon the Chef", "RZA", "Method Man","Masta Killah"],3),
+  new triviaQuestion("After Bobby Digitals verse on 'Domestic Violence' who does he talk to on the phone?",["Tekitha", "U-GOD", "Masta Killah","MethodMan"],1),
+  new triviaQuestion("RZA and GZA are brothers.",["True", "False"],1),
+  new triviaQuestion("RZA was acquitted of an attempted murder charge in 1993 that would’ve given him eight years. ",["True", "False"],0),
+  new triviaQuestion("Mainstream hip-hop press credits his second album with 'saving the Wu.' He has enjoyed more success than any other member of the group.",["GZA", "Method Man", "Ghostface Killah", "Raekwon"],2),];
 
 var currentquestion = 0;
 var correctAnswers = 0;
@@ -44,6 +41,8 @@ function checkAns() {
     correctAnswers++;
   }
 }
+
+// Game
 
 $(document).ready(function(){
 	

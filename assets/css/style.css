@@ -12,23 +12,31 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: .5;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
 body {
-    background-color: #94618e;
+    background-color: black;
     line-height:1;
     color: white;
+	background-image:url(../images/wu-tang-clan-wallpaper-3.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 .jumbotron {
-    background-color:#49274a !important;
+    background-color: rgba(0, 0, 0, 0.6); !important;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 article,aside,details,figcaption,figure,
@@ -49,20 +57,22 @@ q:before, q:after {
     content:'';
     content:none;
 }
-/*end of default style resetting*/
+/*reset*/
 
 h1 {
-  font-size: 20vw;
-  font-family: 'Chonburi', cursive;
+	font-size: 6em;
+	font-family: 'Shojumaru', cursive;
+	font-weight: normal;
 }
 
 .ui-widget-header {
-    background-image: none !important;
-    background-color: #f4decb !important; 
+    background-image: none; !important;
+    background-color: silver important; 
 }
 
 label{
   display: inline;
+  text-align: left;
 }  
 
 h3, #next {
@@ -72,10 +82,12 @@ h3, #next {
 }
 
 #result {
-  font-family: 'Press Start 2P', cursive !important;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #036;
+	font-family: 'Press Start 2P', 'Shojumaru', cursive;
+!important;
+	font-weight: bold;
+	font-size: 2.4em;
+	color: white;
+	bottom: 10%;
 }
 
 input[name="option"] {
@@ -88,14 +100,6 @@ input[name="option"] {
   max-width: 205px;
 }
 
-#progressbar {
-  float: none;
-  margin: auto;
-  margin-top: 20px;
-   
-  width: 50%;
- }
-
 #container {
   text-align: center;
 }
@@ -107,27 +111,24 @@ input, select {
 .button {
     display: inline-block;
     padding: 1em;
-    background-color: #79BD9A;
+    background-color: white;
     text-decoration: none !important; 
-    color: white !important;
+    color: white important;
+	background-color: #fedb32;
 } 
 body{
   text-align: center;
 }
-
-.progress-bar {
-  float: left;
-  width: 0;
-  /*height: 100%;*/
-  font-size: 12px;
-  line-height: 20px;
-  color: #fff;
-  text-align: center;
-  background-color: #337ab7;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-  -webkit-transition: width .6s ease;
-       -o-transition: width .6s ease;
-          transition: width .6s ease;
+.button {
+	color: white;
+	margin-top: 50px;
+	text-shadow: none;
 }
-
+#protect {
+	margin-top: 20px;
+	height: auto;
+	width: 80px;
+	position:;
+	margin-left: auto;
+	margin-right: auto;
+}
